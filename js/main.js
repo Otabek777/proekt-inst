@@ -25,6 +25,18 @@ $(".modal__close").click(function() {
         $(".modal").removeClass("active");
     }, 300);
 });
+$(".header__search .btn").click(function() {
+    $(".main__search").addClass("active");
+    setTimeout(function() {
+        $(".main__search").addClass("open");
+    }, 10);
+});
+$(".main__search .close").click(function() {
+    $(".main__search").removeClass("open");
+    setTimeout(function() {
+        $(".main__search").removeClass("active");
+    }, 300);
+});
 if(document.querySelector('.input_phone')) {
     window.addEventListener("DOMContentLoaded", function() {
         [].forEach.call( document.querySelectorAll('.tel'), function(input) {
