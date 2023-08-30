@@ -772,13 +772,14 @@ width: 0px; }
 }
 .footer__navbar {
     display: flex;
+    max-width: 210px;
+    width: 100%;
     ul {
-        margin-right: 57px;
-    }
-    ul:last-child {
-        margin-right: 0;
+        display: flex;
+        flex-wrap: wrap;
     }
     li {
+        width: 50%;
         margin-bottom: 8px;
     }
     a {
@@ -852,6 +853,12 @@ width: 0px; }
 
 // media
 @media screen and (max-width: 1024px) {
+    .footer__navbar {
+    max-width: 100%;
+    }
+    .footer__navbar li {
+    width: 100%;
+    }
     section {
         display: none;
     }

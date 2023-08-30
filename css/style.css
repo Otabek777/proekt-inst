@@ -939,17 +939,18 @@ h4 {
 }
 
 .footer__navbar {
+  max-width: 210px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 .footer__navbar ul {
-  margin-right: 57px;
-}
-.footer__navbar ul:last-child {
-  margin-right: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 .footer__navbar li {
+  width: 50%;
   margin-bottom: 8px;
 }
 .footer__navbar a {
@@ -1034,6 +1035,12 @@ h4 {
 }
 
 @media screen and (max-width: 1024px) {
+  .footer__navbar {
+    max-width: 100%;
+  }
+  .footer__navbar li {
+    width: 100%;
+  }
   section {
     display: none;
   }
